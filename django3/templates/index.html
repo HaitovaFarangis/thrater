@@ -1,0 +1,477 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="{% static 'css/output.css' %}" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <main class="bg-[#2B2B2B] pb-[50px]">
+        <header class="bg-[#2B2B2B] flex items-center justify-between py-[20px] mb:px-[10px] px-[50px]">
+            <img src="{% static 'img/logo (3).svg' %}">
+            <img src="{% static 'img/nav menu.svg' %}" class="deck:hidden">
+            <div class="flex items-center gap-[50px] text-[18px] mb:hidden">
+                <p class="w-[flex items-center text-white justify-center font-[600] p-[15px_20px]]">Marketplace</p>
+                <p class="w-[flex items-center text-white justify-center font-[600] p-[15px_20px]]">Rankings</p>
+                <p class="w-[flex items-center text-white justify-center font-[600] p-[15px_20px]]">Connect a wallet</p>
+                <button
+                    class="hover:shadow-[0px_0px_10px_#d5baf8] flex items-center justify-center gap-[15px] p-[25px_30px] rounded-[20px] font-[600] bg-[#A259FF] text-white">
+                    <img src="{% static 'img/User (2).svg' %}">
+                    <p class="">Sign Up</p>
+                </button>
+            </div>
+        </header>
+
+
+        <section
+            class="bg-[#2B2B2B] py-[100px] flex items-start mb:flex-col mb:px-[20px] mb:py-[15px] mb:pb-[25px] justify-center mb:gap-[20px] gap-[50px] px-[100px] text-white">
+            <div>
+                <p class="leading-[90px] pb-[20px] text-[67px] mb:text-[35px] mb:leading-[150%] font-[600]">Discover
+                    Digital Art & Collect NFTs</p>
+                <p class="leading-[160%] pb-[40px] text-[22px] font-[400]">NFT marketplace UI created with Anima for
+                    Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+                <button
+                    class="hover:shadow-[0px_0px_10px_#d5baf8] flex items-center mb:hidden mb-[40px] justify-center gap-[15px] p-[15px_40px] rounded-[20px] font-[600] bg-[#A259FF] text-white">
+                    <img src="{% static 'img/RocketLaunch.svg' %}">
+                    <p>Get Started</p>
+                </button>
+                <div class="flex items-center mb:hidden gap-[80px]">
+                    <div>
+                        <p class="font-[700] text-[#A259FF] text-[28px]">240k+ </p>
+                        <p class="text-[24px]">Total Sale</p>
+                    </div>
+                    <div>
+                        <p class="font-[700] text-[#A259FF] text-[28px]">100k+ </p>
+                        <p class="text-[24px]">Auctions</p>
+                    </div>
+                    <div>
+                        <p class="font-[700] text-[#A259FF] text-[28px]">240k+ </p>
+                        <p class="text-[24px]">Artists</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1500"
+                class="bg-[#3B3B3B] mb:min-w-[100%] min-w-[510px] rounded-[20px]">
+                <img src="{% static 'img/Image Placeholder.svg' %}">
+                <div class="px-[30px] pb-[25px] pt-[20px]">
+                    <p class="font-semibold text-[22px] pb-[15px]">Space Walking</p>
+                    <div class="flex items-center gap-[10px]">
+                        <img src="{% static 'img/Avatar.svg' %}">
+                        <p>Animakid</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-[#2B2B2B] text-white mb:px-0 px-[170px] mb:py-[20px] py-[50px]">
+            <p class="text-[38px] mb:pl-[32px] text-[#d3b3fd] font-serif mb:pr-0 font-[600]">Trending Collection</p>
+            <p class="text-[22px] mb:pl-[32px] mb:pr-0 pt-[10px]">Checkout our weekly updated trending collection.</p>
+            <div class="pt-[80px] flex items-center justify-center gap-[40px]">
+                <div data-aos="flip-up" data-aos-duration="1500">
+                    <img src="{% static 'img/aaaa.svg' %}">
+                    <div class="pb-[25px] pt-[20px]">
+                        <p class="font-semibold text-[22px] pb-[15px]">DSGN Animals</p>
+                        <div class="flex items-center gap-[10px]">
+                            <img src="{% static 'img/Avatar (0).svg' %}">
+                            <p>MrFox</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb:hidden" data-aos="flip-down" data-aos-duration="1500">
+                    <img src="{% static 'img/Photos & Number of additional NFTs (1).svg' %}">
+                    <div class="pb-[25px] pt-[20px]">
+                        <p class="font-semibold text-[22px] pb-[15px]">Magic Mushrooms</p>
+                        <div class="flex items-center gap-[10px]">
+                            <img src="{% static 'img/Avatar (1).svg' %}">
+                            <p>Shroomie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb:hidden" data-aos="flip-up" data-aos-duration="1500">
+                    <img src="{% static 'img/Photos & Number of additional NFTs (2).svg' %}">
+                    <div class="pb-[25px] pt-[20px]">
+                        <p class="font-semibold text-[22px] pb-[15px]">Disco Machines</p>
+                        <div class="flex items-center gap-[10px]">
+                            <img src="{% static 'img/Avatar (2).svg' %}">
+                            <p>BeKind2Robots</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#2B2B2B] text-white mb:px-[15px] px-[170px] mb:py-[20px] py-[50px]">
+            <div class="flex items-end justify-between">
+                <div class="">
+                    <p class="text-[38px] font-[600]  text-[#d3b3fd] font-serif ">Top creators</p>
+                    <p class="text-[22px] pt-[10px]">Checkout Top Rated Creators on the NFT Marketplace</p>
+                </div>
+                <button
+                    class="hover:shadow-[0px_0px_10px_#d5baf8] flex items-center mb:hidden justify-center gap-[15px] p-[15px_40px] rounded-[20px] font-[600] border-[#A259FF] border-solid border-[1px] text-[#A259FF]">
+                    <img src="{% static 'img/RocketLaunch perple.svg' %}">
+                    <p>View Rankings</p>
+                </button>
+            </div>
+
+            <div class="pt-[70px]">
+
+                <div class="flex items-center mb:flex-col justify-center gap-[40px]">
+                    <div>
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50"
+                            class="rounded-[20px] mb:text-start text-center mb:flex mb:items-center mb:justify-center mb:gap-[20px] mb:w-[100%] mb:h-[100px] relative mb:pt-[30px] p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] mb:gap-0 items-start gap-[10px]">
+                                <img class="mb:absolute mb:left-[15px] mb:top-[15px] mb:z-20 mb:w-[30px] "
+                                    src="{% static 'img/Ranking Number (1).svg' %}">
+                                <img class="mb:w-[60px] mb:absolute mb:left-[20px] mb:top-[20px] mb:z-10"
+                                    src="{% static 'img/Artist Avatar (0).svg' %}">
+                            </div>
+                            <div>
+                                <p class="text-[22px] font-[600]">Keepitreal</p>
+                                <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"
+                            class="rounded-[20px] text-center mb:flex mb:items-center mb:justify-center mb:gap-[20px] mb:w-[100%] mb:h-[100px] relative mb:pt-[30px] p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] mb:gap-0 items-start gap-[10px]">
+                                <img class="mb:absolute mb:left-[15px] mb:top-[15px] mb:z-20 mb:w-[30px] "
+                                    src="{% static 'img/Ranking Number (2).svg' %}">
+                                <img class="mb:w-[60px] mb:absolute mb:left-[20px] mb:top-[20px] mb:z-10"
+                                    src="{% static 'img/Artist Avatar (1).svg' %}">
+                            </div>
+                            <div class="mb:text-start">
+                                <p class="text-[22px] font-[600]">DigiLab</p>
+                                <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400"
+                            class="rounded-[20px] text-center mb:flex mb:items-center mb:justify-center mb:gap-[20px] mb:w-[100%] mb:h-[100px] relative mb:pt-[30px] p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] mb:gap-0 items-start gap-[10px]">
+                                <img class="mb:absolute mb:left-[15px] mb:top-[15px] mb:z-20 mb:w-[30px] "
+                                    src="{% static 'img/Ranking Number (3).svg' %}">
+                                <img class="mb:w-[60px] mb:absolute mb:left-[20px] mb:top-[20px] mb:z-10"
+                                    src="{% static 'img/Artist Avatar (2).svg' %}">
+                            </div>
+                            <div class="mb:text-start">
+                                <p class="text-[22px] font-[600]">GravityOne</p>
+                                <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600"
+                            class="rounded-[20px] text-center mb:flex mb:items-center mb:justify-center mb:gap-[20px] mb:w-[100%] mb:h-[100px] relative mb:pt-[30px] p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] mb:gap-0 items-start gap-[10px]">
+                                <img class="mb:absolute mb:left-[15px] mb:top-[15px] mb:z-20 mb:w-[30px] "
+                                    src="{% static 'img/Ranking Number (4).svg' %}">
+                                <img class="mb:w-[60px] mb:absolute mb:left-[20px] mb:top-[20px] mb:z-10"
+                                    src="{% static 'img/Artist Avatar (3).svg' %}">
+                            </div>
+                            <div class="mb:text-start">
+                                <p class="text-[22px] font-[600]">Juanie</p>
+                                <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center pt-[40px] gap-[40px]">
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
+                        <div
+                            class="rounded-[20px] text-center mb:flex mb:text-start mb:items-center mb:justify-center mb:gap-[20px] mb:w-[100%] mb:h-[100px] relative mb:pt-[30px] p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] mb:gap-0 items-start gap-[10px]">
+                                <img class="mb:absolute mb:left-[15px] mb:top-[15px] mb:z-20 mb:w-[30px] "
+                                    src="{% static 'img/Ranking Number (5).svg' %}">
+                                <img class="mb:w-[60px] mb:absolute mb:left-[20px] mb:top-[20px] mb:z-10"
+                                    src="{% static 'img/Artist Avatar (4).svg' %}">
+                            </div>
+                            <div class="mb:text-start">
+                                <p class="text-[22px] font-[600]">BlueWhale</p>
+                                <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
+                        <div class="rounded-[20px] text-center mb:hidden p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] items-start gap-[10px]">
+                                <img src="{% static 'img/Ranking Number (6).svg' %}">
+                                <img src="{% static 'img/Artist Avatar (5).svg' %}">
+                            </div>
+                            <p class="text-[22px] font-[600]">mr fox</p>
+                            <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200">
+                        <div class="rounded-[20px] text-center mb:hidden p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] items-start gap-[10px]">
+                                <img src="{% static 'img/Ranking Number (7).svg' %}">
+                                <img src="{% static 'img/Artist Avatar (6).svg' %}">
+                            </div>
+                            <p class="text-[22px] font-[600]">Shroomie</p>
+                            <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1400">
+                        <div class="rounded-[20px] text-center mb:hidden p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] items-start gap-[10px]">
+                                <img src="{% static 'img/Ranking Number (8).svg' %}">
+                                <img src="{% static 'img/Artist Avatar (7).svg' %}">
+                            </div>
+                            <p class="text-[22px] font-[600]">robotica</p>
+                            <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex items-center mb:hidden justify-center pt-[40px] gap-[40px]">
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1600">
+                        <div class="rounded-[20px] text-center p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] items-start gap-[10px]">
+                                <img src="{% static 'img/Ranking Number (9).svg' %}">
+                                <img src="{% static 'img/Artist Avatar (8).svg' %}">
+                            </div>
+                            <p class="text-[22px] font-[600]">BlueWhale</p>
+                            <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1800">
+                        <div class="rounded-[20px] text-center p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] items-start gap-[10px]">
+                                <img src="{% static 'img/Ranking Number (10).svg' %}">
+                                <img src="{% static 'img/Artist Avatar (9).svg' %}">
+                            </div>
+                            <p class="text-[22px] font-[600]">mr fox</p>
+                            <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">
+                        <div class="rounded-[20px] text-center p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] items-start gap-[10px]">
+                                <img src="{% static 'img/Ranking Number (11).svg' %}">
+                                <img src="{% static 'img/Artist Avatar (10).svg' %}">
+                            </div>
+                            <p class="text-[22px] font-[600]">Shroomie</p>
+                            <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2200">
+
+                        <div class="rounded-[20px] text-center p-[20px] w-[240px] h-[238px] bg-[#3B3B3B]">
+                            <div class="flex pb-[10px] items-start gap-[10px]">
+                                <img src="{% static 'img/Ranking Number (12).svg' %}">
+                                <img src="{% static 'img/Artist Avatar (11).svg' %}">
+                            </div>
+                            <p class="text-[22px] font-[600]">robotica</p>
+                            <p class="pt-[10px]"><span class="text-[#858584]">Total Sales:</span> 34.53 ETH</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="flex items-center justify-center">
+                <button
+                    class="hover:shadow-[0px_0px_10px_#d5baf8] flex items-center mt-[40px] deck:hidden justify-center gap-[15px] p-[15px_40px] rounded-[20px] font-[600] border-[#A259FF] border-solid border-[1px] text-[#A259FF]">
+                    <img src="{% static 'img/RocketLaunch perple.svg' %}">
+                    <p>View Rankings</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="bg-[#2B2B2B] text-white mb:px-[15px] px-[170px] mb:py-[20px] pb-[30px] py-[50px]">
+            <p class="text-[38px] mb:pl-[15px] font-[600] text-[#d3b3fd] font-serif">Browse Categories</p>
+
+            <div class="pt-[70px] mb:pt-[30px]">
+                <div class="flex items-center justify-between mb:flex-wrap mb:justify-center gap-[40px] mb:gap-[35px]">
+                    <div data-aos="zoom-in" data-aos-duration="1500"
+                        class="bg-[#3B3B3B] w-[240px] rounded-[20px] mb:w-[147px] mb:h-[209px]">
+                        <img src="{% static 'img/Photo & Icon.svg' %}">
+                        <p class="p-[20px_30px_25px_30px] text-[22px] mb:text-[16px] font-[600] font-serif">Art</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1500"
+                        class="bg-[#3B3B3B] w-[240px] rounded-[20px] mb:w-[147px] mb:h-[209px]">
+                        <img src="{% static 'img/Photo & Icon (1).svg' %}">
+                        <p class="p-[20px_30px_25px_30px] text-[22px] mb:text-[16px] font-[600] font-serif">Collectibles
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1500"
+                        class="bg-[#3B3B3B] w-[240px] rounded-[20px] mb:w-[147px] mb:h-[209px]">
+                        <img src="{% static 'img/Photo & Icon (2).svg' %}">
+                        <p class="p-[20px_30px_25px_30px] text-[22px] mb:text-[16px] font-[600] font-serif">Music</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1500"
+                        class="bg-[#3B3B3B] w-[240px] rounded-[20px] mb:w-[147px] mb:h-[209px]">
+                        <img src="{% static 'img/Photo & Icon (3).svg' %}">
+                        <p class="p-[20px_30px_25px_30px] text-[22px] mb:text-[16px] font-[600] font-serif">Photography
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center mt-[35px] justify-between mb:flex-wrap mb:justify-center gap-[40px] mb:gap-[35px]">
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="bg-[#3B3B3B] w-[240px] rounded-[20px] mb:w-[147px] mb:h-[209px]">
+                        <img src="{% static 'img/Photo & Icon vidio.svg' %}">
+                        <p class="p-[20px_30px_25px_30px] text-[22px] mb:text-[16px] font-[600] font-serif">Video</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="bg-[#3B3B3B] w-[240px] rounded-[20px] mb:w-[147px] mb:h-[209px]">
+                        <img src="{% static 'img/Photo & Icon (4).svg' %}">
+                        <p class="p-[20px_30px_25px_30px] text-[22px] mb:text-[16px] font-[600] font-serif">Utility</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="bg-[#3B3B3B] w-[240px] rounded-[20px] mb:w-[147px] mb:h-[209px]">
+                        <img src="{% static 'img/Photo & Icon copy.svg' %}">
+                        <p class="p-[20px_30px_25px_30px] text-[22px] mb:text-[16px] font-[600] font-serif">Sport</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000"
+                        class="bg-[#3B3B3B] w-[240px] rounded-[20px] mb:w-[147px] mb:h-[209px]">
+                        <img src="{% static 'img/Photo & Icon (6).svg' %}">
+                        <p class="p-[20px_0px_25px_30px] text-[22px] mb:text-[16px] font-[600] font-serif">Virtual
+                            Worlds</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#2B2B2B] text-white mb:px-[15px] px-[170px] mb:py-[20px] pt-[150px]">
+            <p class="text-[38px] mb:pl-[32px] mb:pr-0 font-[600]">How it works</p>
+            <p class="text-[22px] mb:pl-[32px] mb:pr-0 pt-[10px]">Find out how to get started</p>
+
+            <div class="py-[70px] mb:pb-[30px] flex items-center mb:flex-col gap-[40px]  justify-center">
+                <div class="">
+                    <div
+                        class="w-[330px] bg-[#3B3B3B] p-[10px_30px_30px_30px] mb:flex mb:w-[315px] mb:h-[157px] mb:items-center mb:gap-[20px] h-[439px] rounded-[20px]">
+                        <img class="mb:w-[100px]" src="{% static 'img/ddd.svg' %}">
+                        <div>
+                            <p
+                                class="text-[22px] pb-[15px] font-[600] text-center mb:text-start mb:text-[16px] pt-[20px]">
+                                Setup Your wallet</p>
+                            <p class="text-center mb:text-[12px] mb:text-start">Set up your wallet of choice. Connect it
+                                to
+                                the Animarket by clicking the wallet icon in the top right corner.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div
+                        class="p-[10px_30px_30px_30px] w-[330px] bg-[#3B3B3B] mb:mt-[30px]  mb:flex mb:w-[315px] mb:h-[157px] mb:items-center mb:gap-[20px] h-[439px] rounded-[20px]">
+                        <img class="mb:w-[100px]" src="{% static 'img/ddd.svg' %}">
+                        <div>
+                            <p
+                                class="text-[22px] pb-[15px] font-[600] text-center mb:text-start mb:text-[16px] pt-[20px]">
+                                Create Collection</p>
+                            <p class="text-center mb:text-[12px] mb:text-start">Upload your work and setup your
+                                collection.
+                                Add a description, social links and floor price.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div
+                        class="p-[10px_30px_30px_30px] w-[330px] bg-[#3B3B3B] mb:mt-[30px]  mb:flex mb:w-[315px] mb:h-[157px] mb:items-center mb:gap-[20px] h-[439px] rounded-[20px]">
+                        <img class="mb:w-[100px]" src="{% static 'img/ddd.svg' %}">
+                        <div>
+                            <p
+                                class="text-[22px] pb-[15px] font-[600] text-center mb:text-start mb:text-[16px] pt-[20px]">
+                                Start Earning</p>
+                            <p class="text-center mb:text-[12px] mb:text-start">Choose between auctions and fixed-price
+                                listings. Start earning by selling your NFTs or trading others.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section
+            class="bg-[#3B3B3B] w-[80%] flex justify-between items-center mx-auto rounded-[20px] p-10 mt-[50px]  mt-7 mb:flex-col mb:gap-[20px] mb:w-[90%]">
+            <img src="{% static 'img/Photo.svg' %}" alt="" data-aos="fade-right" data-aos-duration="2500">
+            <div class=" flex flex-col gap-[15px]">
+                <p class="text-[38px]  text-white font-bold ">Join our weekly digest</p>
+                <p class="text-[#858584]">Get exclusive promotions & updates straight to your inbox.</p>
+                <form action="https://formspree.io/f/xldwolnn" method="POST"
+                    class=" mb:flex mb:flex-col mb:gap-[10px]  ">
+                    <input type="email" placeholder="Enter your email here"
+                        class="text-[#2B2B2B] placeholder:text-[#2B2B2B] placeholder:font-[600] rounded-[15px] p-3 w-[270px] mb:w-[100%] mb:pr-[0px] pr-[90px]  outline-none">
+                    <button
+                        class="hover:shadow-[0px_0px_10px_#d5baf8] bg-[#A259FF] rounded-[15px] p-3 text-white font-[600] px-[20px] relative right-[80px] mb:hidden">Subscribe</button>
+                    <div
+                        class="hidden bg-[#A259FF] rounded-[15px] p-3 mb:w-[100%] px-[20px] w-[90%] mb:flex items-center justify-center gap-[10px]">
+                        <img src="{% static 'img/EnvelopeSimple.svg' %}" alt="">
+                        <p class="text-white font-[600] text-center"> Subscribe </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="bg-[#3B3B3B] py-8 flex flex-col gap-[30px]">
+        <div class=" flex justify-center gap-[70px] mb:flex-col mb:pl-[20px] ">
+            <div class="flex flex-col justify-center gap-[5px] ">
+
+                <div class=" flex gap-[10px]">
+                    <img src="{% static 'img/Storefront.svg' %}" alt="">
+                    <p class="font-mono text-white font-[700] text-[18px]">NFT Marketplace</p>
+                </div>
+                <p class="text-[#CCCCCC] ">NFT marketplace UI created with Anima for Figma.</p>
+                <p class="text-[#CCCCCC] py-2">Join our community</p>
+                <img src="{% static 'img/Icons.svg' %}" alt="" class="w-[150px]">
+            </div>
+            <div class=" flex flex-col gap-[10px]">
+                <p class="font-mono text-white font-[700] text-[18px]">Explore</p>
+                <p class="text-[#CCCCCC] ">Marketplace</p>
+                <p class="text-[#CCCCCC] ">Rankings</p>
+                <p class="text-[#CCCCCC] ">Connect a wallet</p>
+
+
+            </div>
+
+            <div class=" flex flex-col gap-[10px]">
+                <p class="font-mono text-white font-[700] text-[18px]">Join our weekly digest</p>
+                <p class="text-[#CCCCCC] ">Get exclusive promotions & updates straight to your inbox.</p>
+                <form action="https://formspree.io/f/xldwolnn" method="POST"
+                    class=" mb:flex mb:flex-col mb:gap-[10px]  ">
+
+                    <input type="email" placeholder="Enter your email here"
+                        class="text-[#2B2B2B] placeholder:text-[#2B2B2B] placeholder:font-[600] rounded-[15px] p-3 w-[270px] mb:w-[90%] mb:pr-[0px] pr-[90px]  outline-none">
+                    <button
+                        class="hover:shadow-[0px_0px_10px_#d5baf8] bg-[#A259FF] rounded-[15px] p-3 text-white font-[600] px-[20px] relative right-[80px] mb:hidden">Subscribe</button>
+                    <div
+                        class="hidden bg-[#A259FF] rounded-[15px] p-3  px-[20px] w-[90%] mb:flex items-center justify-center gap-[10px]">
+                        <img src="{% static 'img/EnvelopeSimple.svg' %}" alt="">
+                        <p class="text-white font-[600] text-center"> Subscribe </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="w-[87%] mx-auto h-[2px]  bg-[#858584]"></div>
+        <p class="text-[#CCCCCC] text-[12px] pl-[80px]">Ⓒ NFT Market. Use this template freely.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); 
+    </script>
+</body>
+
+</html>

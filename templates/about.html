@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Movie Theater</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        <h1 style="color: white;">🎥 Movie Theater</h1>
+        <div class="top1">
+            <img src="{% static 'img/image.png' %}" alt="" width="200px">
+            <div class="qq">
+                <a class="q" href="{% url 'start'  %}">Home</a>
+                <a class="q" href="{% url 'about' %}">About Us</a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="about-text">
+            <h2>About Our Theater</h2>
+            <p>
+                Welcome to <span class="highlight">Movie Theater</span> — a place where stories come alive on the big
+                screen.
+                For over a decade, we’ve been bringing the magic of cinema to our city, offering the latest
+                blockbusters, indie films, and special screenings for true movie lovers.
+            </p>
+            <p>
+                Our comfortable halls, modern sound system, and cozy atmosphere make every visit unforgettable.
+                Whether you're here for an action-packed adventure or a heartwarming romance, we promise — you'll feel
+                the magic of cinema.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="{% static 'img/hall.png' %}" alt="Cinema Hall">
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <h2>Our Mission</h2>
+        <p>
+            To create unforgettable movie experiences by combining cutting-edge technology, comfort, and a passion for
+            storytelling.
+        </p>
+    </section>
+
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="{% static 'img/director.png' %}" alt="Manager">
+                <h3>Sarah Johnson</h3>
+                <p>General Manager</p>
+            </div>
+
+            <div class="team-card">
+                <img src="{% static 'img/progectionist.png' %}" alt="Projectionist">
+                <h3>Alex Carter</h3>
+                <p>Head Projectionist</p>
+            </div>
+
+            <div class="team-card">
+                <img src="{% static 'img/lisa.png' %}" alt="Marketing">
+                <h3>Lisa Wong</h3>
+                <p>Marketing Director</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p style="color: rgb(118, 116, 116); display:flex; justify-content: center; padding: 10px 0px;">© 2025 Movie
+            Theater | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

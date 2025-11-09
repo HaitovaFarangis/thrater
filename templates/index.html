@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Theater</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header class="header">
+        <h1 style="color: white;">🎥 Movie Theater</h1>
+    <div class="top1">
+        <img src="{% static 'img/image.png' %}" alt="" width="200px">
+        <div class="qq">
+            <a class="q" href="{% url 'start'  %}" >Home</a>
+            <a class="q" href="{% url 'about' %}" >About Us</a>
+        </div>
+        
+    </div>
+    </header>
+
+    <main class="movie-container">
+        {% for i in movies %}
+        <div class="movie-card">
+            <img src="{{ i.image.url }}" alt="{{ i.title }}" class="movie-poster">
+            <div class="movie-info">
+                <h2 class="movie-title">{{ i.title }}</h2>
+                <p class="movie-description">{{ i.description }}</p>
+                {% if i.duration > 1 %}
+                <p class="movie-duration">⏱ Duration: {{ i.duration }} hours</p>
+                {% else %}
+                <p class="movie-duration">⏱ Duration: {{ i.duration }} hour</p>
+
+                {% endif%}
+                <p class="movie-status">
+                    {% if i.is_active %}
+                        <span class="active">This movie is active</span>
+                    {% else %}
+                        <span class="inactive">This not movie is active</span>
+                    {% endif %}
+                </p>
+                <a href="{% url 'movie_detail' i.id %}"><button class="movie-descriptions"> More options </button></a>
+            </div>
+            
+        </div>
+        {% endfor %}
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Movie Theater | Enjoy your film!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%  load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%    for task in tasks  %}
+        <img src="{{task.image.url}}" width="200px" height="300px" alt="">
+        <h1>{{task.title}}</h1>
+        <h2>{{task.description}}</h2>
+        <h2>{{task.due_date}}</h2>
+        <h2>{{task.is_completed}}</h2>
+        <h2>{{task.created_at}}</h2>
+        <h2>{{task.task.id}}</h2>
+
+    {%  endfor  %}
+</body>
+</html>
